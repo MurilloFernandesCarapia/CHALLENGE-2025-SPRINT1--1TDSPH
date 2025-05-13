@@ -1,0 +1,20 @@
+header {
+    background-color: #014ba0;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  header nav{
+    background-color: white;
+  }
+  
+  header nav li a{
+    background-color: #006666;
+    color: white;
+    border-radius: 10px;
+    
+    
+  
+    
+  
+  }

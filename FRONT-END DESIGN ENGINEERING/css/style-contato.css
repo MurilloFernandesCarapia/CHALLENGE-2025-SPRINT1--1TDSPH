@@ -1,3 +1,19 @@
+header {
+  background-color: #014ba0;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+header nav{
+  background-color: white;
+}
+
+header nav li a{
+  background-color: #006666;
+  color: white;
+  border-radius: 10px;
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
@@ -5,3 +21,58 @@ footer {
     color: white;
     margin-top: 50px;
   }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+  
+  .contato-item {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .contato-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contato-item img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .contato-item h3 {
+    margin: 10px 0 8px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .contato-item p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+    margin: 0;
+  }
+  
+  .contato-item a {
+    text-decoration: none;
+  }
+  
+  
+  
