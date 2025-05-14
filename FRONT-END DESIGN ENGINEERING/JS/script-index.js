@@ -1,16 +1,16 @@
-// Abrir o formulário
+
 document.getElementById("openFormBtn").addEventListener("click", function () {
     document.getElementById("teleconsultaForm").classList.add("open");
     document.body.style.overflow = 'hidden'; 
 });
 
-// Fechar o formulário
+
 function closeForm() {
     document.getElementById("teleconsultaForm").classList.remove("open");
     document.body.style.overflow = 'auto';
 }
 
-// Enviar formulário
+
 document.getElementById("consultaForm").addEventListener("submit", function (e) {
     e.preventDefault();
     alert("Voce entrou em uma reunião, aguarde o médico te atender!");
