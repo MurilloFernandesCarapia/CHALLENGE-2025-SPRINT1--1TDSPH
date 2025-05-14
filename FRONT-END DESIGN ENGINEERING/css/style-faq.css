@@ -1,12 +1,19 @@
-body {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
+/* RESET E BASE */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
   min-height: 100vh;
+  background-color: #f5f8ff;
   z-index: 0;
 }
 
+/* FUNDO COM IMAGEM TRANSLÚCIDA */
 body::before {
   content: "";
   position: fixed;
@@ -18,11 +25,12 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.50; 
+  opacity: 0.15; 
   z-index: -1;
   pointer-events: none; 
 }
 
+/* HEADER */
 header {
   background: linear-gradient(to right, #0059b3, #0099ff);
   color: white;
@@ -41,12 +49,12 @@ header h1 {
   font-weight: 800;
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
+/* NAVEGAÇÃO */
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,18 +75,195 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ffd700;
+  background-color: #90f8ff;
   color: #000;
   transform: scale(1.05);
 }
 
+/* FAQ - CONTAINER */
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
 
+/* TÍTULO PRINCIPAL */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
 
+/* FAQ - ITENS */
+.faq-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
 
+.faq-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.faq-question {
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  background-color: #e6f0ff;
+  border-radius: 12px 12px 0 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background-color: #f9fbff;
+  font-size: 15px;
+  color: #333;
+  transition: max-height 0.5s ease, padding 0.4s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  padding: 15px 20px 20px;
+}
+
+.arrow {
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open .arrow {
+  transform: rotate(90deg);
+}
+
+/* RODAPÉ */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #014ba0;
-    color: white;
-    margin-top: 50px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #014ba0;
+  color: white;
+  margin-top: 50px;
+}
+
+
+  /* Mídias fluidas */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Extra Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
   }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  main h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 16px 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 12px 22px;
+  }
+
+  main h1 {
+    font-size: 24px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 34px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 14px 24px;
+  }
+
+  main h1 {
+    font-size: 26px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 38px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 16px 28px;
+  }
+
+  main h1 {
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 17px;
+  }
+}
+
+/* Extra-Large devices (large laptops and desktops, 1300px and up) */
+@media (min-width: 1300px) {
+  header h1 {
+    font-size: 42px;
+  }
+
+  nav ul li a {
+    font-size: 22px;
+    padding: 18px 30px;
+  }
+
+  main h1 {
+    font-size: 34px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+}

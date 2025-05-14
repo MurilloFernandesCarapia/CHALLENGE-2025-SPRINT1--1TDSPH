@@ -1,10 +1,16 @@
-body {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
+/* RESET GLOBAL */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  position: relative;
   min-height: 100vh;
   z-index: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body::before {
@@ -14,15 +20,16 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/HospitalDasClinicas.jpg'); 
+  background-image: url('../img/HospitalDasClinicas.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.50; 
+  opacity: 0.50;
   z-index: -1;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(to right, #0059b3, #0099ff);
   color: white;
@@ -43,10 +50,9 @@ header h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* NAVEGAÇÃO */
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,23 +73,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ffd700;
+  background-color: #90f8ff;
   color: #000;
   transform: scale(1.05);
 }
+
+/* IMAGEM FAIXA */
 .imagemfaixa {
   width: 100%;
   padding-top: 2rem;
 }
+
+/* BLOCO DE SUPORTE */
 .suporte {
-  background-color: #eaf6ff; /* azul bem claro */
+  background-color: #eaf6ff;
   border: 3px solid #0077cc;
   padding: 40px 25px;
   margin: 40px auto;
   max-width: 800px;
   border-radius: 15px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 0 10px 25px rgba(0, 85, 170, 0.2);
 }
 
@@ -92,7 +101,7 @@ nav ul li a:hover {
   color: #003366;
   margin-bottom: 20px;
   font-weight: 800;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .suporte p {
@@ -102,6 +111,7 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
+/* BOTÃO DE SUPORTE */
 .botao-suporte {
   display: inline-block;
   background-color: #0077cc;
@@ -111,9 +121,9 @@ nav ul li a:hover {
   font-weight: bold;
   text-decoration: none;
   border-radius: 12px;
-  transition: all 0.3s ease;
   border: 3px solid #003366;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
   animation: pulse 2s infinite;
 }
 
@@ -123,17 +133,168 @@ nav ul li a:hover {
   animation: none;
 }
 
-/* Animação de pulso no botão */
+/* ANIMAÇÃO DO BOTÃO */
 @keyframes pulse {
-  0% {
-    transform: scale(1);
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #014ba0;
+  color: white;
+  margin-top: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+
+  /* Extra Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 10px;
   }
-  50% {
-    transform: scale(1.05);
+
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
-  100% {
-    transform: scale(1);
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .suporte {
+    padding: 20px 10px;
+    margin: 20px 10px;
+  }
+
+  .suporte h2 {
+    font-size: 22px;
+  }
+
+  .suporte p {
+    font-size: 15px;
+  }
+
+  .botao-suporte {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
   }
 }
+
+/* Imagens e vídeo fluidos */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .suporte {
+    padding: 25px 15px;
+  }
+
+  .suporte h2 {
+    font-size: 26px;
+  }
+
+  .suporte p {
+    font-size: 17px;
+  }
+
+  .botao-suporte {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+
+  .suporte {
+    padding: 30px 20px;
+  }
+
+  .suporte h2 {
+    font-size: 28px;
+  }
+
+  .suporte p {
+    font-size: 18px;
+  }
+
+  .botao-suporte {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav ul li a {
+    font-size: 20px;
+    padding: 16px 24px;
+  }
+
+  .suporte {
+    padding: 35px 25px;
+  }
+
+  .suporte h2 {
+    font-size: 32px;
+  }
+
+  .suporte p {
+    font-size: 20px;
+  }
+
+  .botao-suporte {
+    font-size: 22px;
+  }
+}
+
+/* Extra-Large devices (large laptops and desktops, 1300px and up) */
+@media (min-width: 1300px) {
+  .suporte {
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+
+  .suporte h2 {
+    font-size: 36px;
+  }
+
+  .suporte p {
+    font-size: 22px;
+  }
+
+  .botao-suporte {
+    font-size: 24px;
+  }
+}
+
 
 

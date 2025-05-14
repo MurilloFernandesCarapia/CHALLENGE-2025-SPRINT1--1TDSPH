@@ -27,19 +27,26 @@
         </nav>
         <nav class="nav-destaque">
             <ul>
-              <li><a href="#">📞 MARCAR TELECONSULTA</a></li>
+              <li><a href="#" id="openFormBtn" >📞 MARCAR TELECONSULTA</a></li>
             </ul>
         </nav>
           
 
     </header>
     <main>
-        <section id="hc">
+        <section id="hc" class="sobre-hc" >
             <img src="./img/faixahc.png" alt="faixa da hc na tela" class = imagemfaixa>
-            <h1>Sobre o Hospital das Clínicas</h1>
+            <h1>🏥 Sobre o Hospital das Clínicas</h1>
             <p>O Hospital das Clínicas inaugurado em  1944, é hoje uma autarquia especial do Governo de São Paulo, vinculada à Secretaria de Estado da Saúde para fins de coordenação administrativa e subordinado à FMUSP para fins de ensino, pesquisa e prestação de serviços de saúde à comunidade, o Hospital das Clínicas da FMUSP que se consolidou como referência de produção e difusão de conhecimento técnico-científico, excelência em ensino e saúde pública</p>
+            <p>O Hospital das Clínicas é muito mais do que uma instituição de saúde — ele é um símbolo de cuidado, ciência e humanidade. Com uma história marcada por dedicação, inovação e acolhimento, o HC se tornou um dos maiores complexos hospitalares da América Latina, referência nacional e internacional no atendimento médico, na formação de profissionais e na pesquisa em saúde.
+
+            Aqui, cada corredor conta uma história de superação. Cada consulta é um passo rumo à esperança. Cada profissional representa um elo entre conhecimento técnico e empatia genuína. Do atendimento básico aos casos mais complexos, o Hospital das Clínicas oferece assistência humanizada e de excelência, sempre pautado nos princípios do SUS e no compromisso com a vida.</p>
+
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.6627533545986!2d-46.67251030160518!3d-23.556750099999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590009755f85%3A0x4b04d91fa556876c!2sHospital%20das%20clinicas!5e0!3m2!1spt-BR!2sbr!4v1746823822947!5m2!1spt-BR!2sbr" width="1920" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p>O HCFMUSP vem avançando e consolidando-se como referência no tratamento de doenças de alta complexidade e também nos campos do ensino, da pesquisa, da assistência e da inovação. Com mais de 21.000 colaboradores realiza mais de um milhão de consultas ambulatoriais, 232 mil atendimentos de urgências e emergências por ano, mais de 50 mil cirurgias por ano.</p>
+            <p>Além de cuidar de milhões de pacientes todos os anos, o HC é também um centro de ensino e pesquisa que forma os melhores médicos, enfermeiros, fisioterapeutas e pesquisadores do país. Em parceria com a Faculdade de Medicina da USP, o hospital está na vanguarda das inovações médicas, contribuindo para o avanço da ciência e para um futuro mais saudável para todos.
+
+            No Hospital das Clínicas, a tecnologia caminha ao lado da solidariedade. É um lugar onde o conhecimento transforma vidas. Um espaço onde cada pessoa importa. Um porto seguro para quem busca saúde, respeito e dignidade.</p>
         </section>
         <section>
             <img src="./img/HospitalDasClinicas.jpg" alt="Foto do hospital das clinicas " style="width: 1150px;">
@@ -48,10 +55,33 @@
             <video src="./img/Como_Usar_Nosso_Site_para_Consultas_e_Teleconsulta.mp4"></video>
             <nav class="nav-destaque">
                 <ul>
-                  <li><a href="#">📞 MARCAR TELECONSULTA</a></li>
+                    <li><a href="#" id="openFormBtn">📞 MARCAR TELECONSULTA</a></li>
                 </ul>
             </nav>
+
         </section>
+        <section>
+            <div class="slide-form" id="teleconsultaForm">
+                <button class="close-btn" onclick="closeForm()">X</button>
+                <h2>Agende sua Teleconsulta</h2>
+                <div class="form-container">
+                    <form id="consultaForm" onsubmit="entrarNaTeleconsulta(event)">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="whatsapp">WhatsApp:</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required>
+
+                        <button type="submit">Entrar em Teleconsulta!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="./JS/script-index.js" defer></script>
 
 
     </main>
