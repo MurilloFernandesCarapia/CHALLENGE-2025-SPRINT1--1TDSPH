@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0FDF8333-E5F8-C624-9D95-9A963FE3BA4E" containerWithKeyObject="17F50C13-F804-06DF-8DD5-2A0B1C554BDC" localFKIndex="BE99BBAB-4095-80F7-DC94-4D0AEA784187" name="T_VB_WHATSAPP_T_VB_PACIENTE_FK">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>4FCAE4E0-BABA-BC23-A53D-3707B6DFF5D8</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<referredTableLongName>T_VB_PACIENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3B05E902-2403-BEDD-DE2F-BD48F0B7280F</referredTableID>
+<keyObject>701F000D-3A64-5943-A9FF-DB8FC9F980A6</keyObject>
+<referredKeyID>701F000D-3A64-5943-A9FF-DB8FC9F980A6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_paciente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

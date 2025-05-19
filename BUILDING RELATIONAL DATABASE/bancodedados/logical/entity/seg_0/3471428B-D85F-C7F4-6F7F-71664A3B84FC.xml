@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3471428B-D85F-C7F4-6F7F-71664A3B84FC" name="T_VB_ESPECIALIDADE">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:55:40 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_especialidade" id="599C8D70-9FDD-EC5F-E142-175B978EEB54">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:55:51 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_medico" id="53036FFC-2DDA-EB13-DFE3-2611F9CAC941">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:57:06 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_formacao" id="EBC949FB-6D8B-38EB-9388-C39C94AA55B4">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:56:11 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_titulo" id="E39A788C-575C-DCAE-B022-B93018C87E6C">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:56:29 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_historico" id="50DBCDD6-4803-DEAE-8EEE-51BB7402A4CC">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:56:45 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_medico2" id="9271FBE9-BF8E-F18F-CF14-7BC8CB62C45E">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:59:30 UTC</createdTime>
+<generatorID>5888A7BB-64C3-05CC-D0AC-4691FF83F179</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<referedAttribute>74D46FF4-514D-7E4E-9115-F3849102F68D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F9DF82F6-2885-A848-D5ED-61A693487F9C" name="T_VB_ESPECIALIDADE_PK">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 19:56:27 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>599C8D70-9FDD-EC5F-E142-175B978EEB54</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

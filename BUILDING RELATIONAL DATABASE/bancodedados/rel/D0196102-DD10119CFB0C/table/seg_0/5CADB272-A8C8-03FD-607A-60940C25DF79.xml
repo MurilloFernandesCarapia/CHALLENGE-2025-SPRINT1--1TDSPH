@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5CADB272-A8C8-03FD-607A-60940C25DF79" name="T_VB_CONSULTA">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>6F6F49CD-4D54-00EA-A44E-F5A06CCAC372</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_consulta" id="2DBAC456-00AF-0D83-B852-40C44DAD430B">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>C272BFD9-5D51-CD75-2A83-7025F040BDC4</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_paciente" id="B52EB9B2-BAD7-472C-2178-D5081A252A08">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>EBD3F2DA-7D3B-8538-A6B6-DBAD1443B3C8</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_medico" id="6C693E5F-3D14-81F6-F742-3CECB0B58C76">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>7C04DFD4-7EE9-72F1-3D15-A1841D1244AD</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_consulta" id="E5D5AA5F-DCF8-44B4-DDB8-5D5456327AD8">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>FCECC325-4A80-4659-24D2-99DDB9ECBFA0</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hr_consulta" id="8BFF2B95-DB5A-4017-74BC-03E76DEF8895">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>ABD8CD52-A6BC-DB41-598E-DA68E54FFB11</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lk_acesso" id="6D61BBE0-A3C6-3450-A73E-9D4513592A6D">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>1C055E98-8543-9EBC-0987-631803ED152A</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_consulta" id="399F2A94-3768-F11D-E396-8AEE1B0C8B39">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>A5DA3CAB-0EB0-82AD-3961-31698CC66BE3</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_VB_PACIENTE_id_paciente" id="D93F39D7-C3B8-82C9-AE34-38B8E138357F">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:27:00 UTC</createdTime>
+<generatorID>BCD11F83-844A-586B-E59F-4EEDCBBBE96F</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6FDB1EF5-732C-7146-21BB-911B83C12DAA" referredColumn="EC7B5500-93BD-F0BE-8074-DDBD90EDD441"/>
+</associations>
+</Column>
+<Column name="T_VB_MEDICO_id_medico" id="DF9670D2-AAA3-F942-2BAA-2BE5F8D37EDE">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:27:00 UTC</createdTime>
+<generatorID>CB202586-4E16-2C3B-48D1-B5F95E3FBDC7</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EC784C8-C5DF-D96C-6038-81A09C2EBD4D" referredColumn="C9EBDDC8-9FDA-8EEB-A033-01E923636FB9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4973FCC8-43F4-7119-9A31-1150D5CC17B8" name="T_VB_CONSULTA_PK">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>311D84A1-0105-5544-9A54-4A092F08EB10</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DBAC456-00AF-0D83-B852-40C44DAD430B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29A6D3AD-8214-E83B-6CF7-C285482B93AB" name="T_VB_CONSULTA_T_VB_MEDICO_FK">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:27:00 UTC</createdTime>
+<generatorID>92DD23A2-B366-0FF8-DAB4-430421687E50</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF9670D2-AAA3-F942-2BAA-2BE5F8D37EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B57B208-901A-825A-9CC3-5D104E669C5D" name="T_VB_CONSULTA_T_VB_PACIENTE_FK">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:27:00 UTC</createdTime>
+<generatorID>A81A89AB-9054-C8F5-091B-51E14AF6626A</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D93F39D7-C3B8-82C9-AE34-38B8E138357F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

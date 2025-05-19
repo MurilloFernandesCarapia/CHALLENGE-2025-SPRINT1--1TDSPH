@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C7A6FE6-ECD8-DA69-A111-3F96282DC481" name="T_VB_MEDICO">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>F9A48AC9-63C2-EC4E-4616-97E4F5ADB228</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_medico" id="C9EBDDC8-9FDA-8EEB-A033-01E923636FB9">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>74D46FF4-514D-7E4E-9115-F3849102F68D</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_medico" id="1F4E0792-C749-C3BE-3B01-42DD814FB855">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>518ADF31-CBDE-628A-A84D-CE054A854624</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cpf" id="6E7DC025-DE3D-DF70-2A43-C6DB2D8800EA">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>A4096F20-BE33-3E2B-E93E-AB763C2D44A0</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_especialista" id="2DF1748D-9395-D000-EEAF-453685B8FBE7">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:15:30 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3B09692-7771-B795-24FB-3937CF98FBC5" name="T_VB_MEDICO_PK">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:12:08 UTC</createdTime>
+<generatorID>2F3D8989-47E5-9447-2E85-8EAA5C2300EC</generatorID>
+<ownerDesignName>bancodedados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9EBDDC8-9FDA-8EEB-A033-01E923636FB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

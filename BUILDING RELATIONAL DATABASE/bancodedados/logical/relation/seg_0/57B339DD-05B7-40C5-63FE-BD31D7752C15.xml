@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="T_VB_CONSULTA_LEMBRETE" directorySegmentName="seg_0" id="57B339DD-05B7-40C5-63FE-BD31D7752C15">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:28:37 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<sourcePk>311D84A1-0105-5544-9A54-4A092F08EB10</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6F6F49CD-4D54-00EA-A44E-F5A06CCAC372</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6780F8E6-9254-A442-6BC1-D299134BC154</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="T_VB_CONSULTA_MEDICO" directorySegmentName="seg_0" id="92DD23A2-B366-0FF8-DAB4-430421687E50">
+<createdBy>Murillo</createdBy>
+<createdTime>2025-05-19 20:25:41 UTC</createdTime>
+<ownerDesignName>bancodedados</ownerDesignName>
+<engineerTo>
+<item key="D0196102-FF19-ED31-9967-DD10119CFB0C" value="true"/>
+</engineerTo>
+<sourcePk>2F3D8989-47E5-9447-2E85-8EAA5C2300EC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F9A48AC9-63C2-EC4E-4616-97E4F5ADB228</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6F6F49CD-4D54-00EA-A44E-F5A06CCAC372</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
