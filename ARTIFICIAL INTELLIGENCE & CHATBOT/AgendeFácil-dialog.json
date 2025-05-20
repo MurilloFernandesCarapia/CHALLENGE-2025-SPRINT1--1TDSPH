@@ -1,0 +1,1629 @@
+{
+  "intents": [
+    {
+      "intent": "agendar_consulta",
+      "examples": [
+        {
+          "text": "Como agendo uma consulta?"
+        },
+        {
+          "text": "Como marcar minha consulta?"
+        },
+        {
+          "text": "Consulta online"
+        },
+        {
+          "text": "Dá pra marcar consulta agora?"
+        },
+        {
+          "text": "Marcar consulta"
+        },
+        {
+          "text": "Me ajuda a agendar"
+        },
+        {
+          "text": "Preciso de uma consulta médica"
+        },
+        {
+          "text": "Quero agendar uma consulta"
+        },
+        {
+          "text": "Quero atendimento"
+        },
+        {
+          "text": "Quero ver o médico"
+        },
+        {
+          "text": "Teleconsulta disponível?"
+        },
+        {
+          "text": "Tenho que agendar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "audio-tutorial",
+      "examples": [
+        {
+          "text": "audio"
+        },
+        {
+          "text": "tutorial"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "cancelar_consulta",
+      "examples": [
+        {
+          "text": "Cancela pra mim"
+        },
+        {
+          "text": "Consulta em horário ruim"
+        },
+        {
+          "text": "Consulta errada"
+        },
+        {
+          "text": "Consulta marcada errado"
+        },
+        {
+          "text": "Desmarca minha consulta"
+        },
+        {
+          "text": "Desmarcar consulta"
+        },
+        {
+          "text": "Mudar horário"
+        },
+        {
+          "text": "Não vou conseguir"
+        },
+        {
+          "text": "Não vou conseguir ir"
+        },
+        {
+          "text": "Quero cancelar a consulta"
+        },
+        {
+          "text": "Tô doente e não posso"
+        },
+        {
+          "text": "Vou faltar"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "duvidas_gerais",
+      "examples": [
+        {
+          "text": "Alguem me ajuda?"
+        },
+        {
+          "text": "Como eu faço?"
+        },
+        {
+          "text": "Como funciona?"
+        },
+        {
+          "text": "Como funciona isso aqui?"
+        },
+        {
+          "text": "Como uso o aplicativo?"
+        },
+        {
+          "text": "É difícil de mexer?"
+        },
+        {
+          "text": "E se eu errar?"
+        },
+        {
+          "text": "Estou com dúvida"
+        },
+        {
+          "text": "Não sei usar"
+        },
+        {
+          "text": "O que esse botão faz?"
+        },
+        {
+          "text": "Para que serve isso?"
+        },
+        {
+          "text": "Pode me explicar?"
+        },
+        {
+          "text": "Pode repetir?"
+        },
+        {
+          "text": "Preciso de ajuda"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "entrar_teleconsulta",
+      "examples": [
+        {
+          "text": "Acesso à consulta online"
+        },
+        {
+          "text": "Cadê o botão da teleconsulta?"
+        },
+        {
+          "text": "Chamada com médico"
+        },
+        {
+          "text": "Como entro na teleconsulta?"
+        },
+        {
+          "text": "Como participar da consulta?"
+        },
+        {
+          "text": "Entrar na consulta"
+        },
+        {
+          "text": "Entrar na teleconsulta"
+        },
+        {
+          "text": "Link da consulta"
+        },
+        {
+          "text": "Me ajuda a entrar na consulta"
+        },
+        {
+          "text": "Não sei como acessar a consulta"
+        },
+        {
+          "text": "Teleatendimento"
+        },
+        {
+          "text": "Teleconsulta agora"
+        },
+        {
+          "text": "teleconsultas"
+        },
+        {
+          "text": "Tô esperando o médico"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "falar_com_humano",
+      "examples": [
+        {
+          "text": "Cadê o atendente?"
+        },
+        {
+          "text": "Chat com pessoa"
+        },
+        {
+          "text": "Falar com recepção"
+        },
+        {
+          "text": "humano"
+        },
+        {
+          "text": "Isso não me ajudou"
+        },
+        {
+          "text": "Me coloca com atendente"
+        },
+        {
+          "text": "Não entendi"
+        },
+        {
+          "text": "Não gosto de robô"
+        },
+        {
+          "text": "Não quero mais isso"
+        },
+        {
+          "text": "Pessoa"
+        },
+        {
+          "text": "Posso falar com humano?"
+        },
+        {
+          "text": "Quero falar com alguém"
+        },
+        {
+          "text": "Quero falar com uma pessoa"
+        },
+        {
+          "text": "Tem alguém aí?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "video_tutorial",
+      "examples": [
+        {
+          "text": "sim"
+        },
+        {
+          "text": "tutorial"
+        },
+        {
+          "text": "video"
+        },
+        {
+          "text": "video tutorial"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "confirmação",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "deixa pra lá",
+            "deixa queto",
+            "deixa quieto",
+            "melhor não",
+            "não quero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "ok",
+            "pode ser",
+            "quero",
+            "tudo bem"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "dispositivo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "celular",
+          "synonyms": [
+            "aparelho telefone",
+            "smartphone",
+            "telefone "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "computador",
+          "synonyms": [
+            "máquina",
+            "notebook",
+            "pc"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tablet",
+          "synonyms": [
+            "Ipad",
+            "Tela"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "duvidas_gerais",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Aplicativo não funciona",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "como funciona",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "consulta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "medo de errar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "teleconsulta",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "especialidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cardiologista",
+          "synonyms": [
+            "coração"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "clínico geral",
+          "synonyms": [
+            "geral",
+            "médico comum"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ginecologista",
+          "synonyms": [
+            "saúde da mulher",
+            "vagina"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ortopedista",
+          "synonyms": [
+            "articulação",
+            "osso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "psícologo",
+          "synonyms": [
+            "psicóloga",
+            "terapeuta"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "horário",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Manhã",
+          "synonyms": [
+            "10",
+            "8",
+            "9",
+            "cedo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Noite",
+          "synonyms": [
+            "19",
+            "20",
+            "21"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tarde",
+          "synonyms": [
+            "14",
+            "15",
+            "16"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "problema_acesso",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Erro",
+          "synonyms": [
+            "falhando"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Não Abre",
+          "synonyms": [
+            "não abre"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Não consigo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tela preta",
+          "synonyms": [
+            "falha",
+            "não carrega"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Travou",
+          "synonyms": [
+            "Travando"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "title": "Olá! 👋 Sou o seu assistente virtual. Posso te ajudar a:",
+            "options": [
+              {
+                "label": "✅ Agendar uma consulta  ",
+                "value": {
+                  "input": {
+                    "text": "agendar consulta"
+                  }
+                }
+              },
+              {
+                "label": "📞 Entrar em uma teleconsulta  ",
+                "value": {
+                  "input": {
+                    "text": "entrar em teleconsulta"
+                  }
+                }
+              },
+              {
+                "label": "❓ Tirar dúvidas sobre o aplicativo  ",
+                "value": {
+                  "input": {
+                    "text": "Estou com dúvida"
+                  }
+                }
+              },
+              {
+                "label": "🙋‍♂️ Falar com um atendente humano ",
+                "value": {
+                  "input": {
+                    "text": "atendente humano"
+                  }
+                }
+              },
+              {
+                "label": "📷 Vídeo tutorial ",
+                "value": {
+                  "input": {
+                    "text": "video tutorial"
+                  }
+                }
+              },
+              {
+                "label": "🎤 Áudio tutorial",
+                "value": {
+                  "input": {
+                    "text": "audio"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "Como posso te ajudar hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_10_1747228637038",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "qual é o seu problema?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1747251811693",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1747251811700",
+      "previous_sibling": "handler_2_1747251811700"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1747251811693",
+      "context": {
+        "problema_acesso": "@problema_acesso"
+      },
+      "conditions": "@problema_acesso",
+      "event_name": "input",
+      "dialog_node": "handler_2_1747251811700"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual dispositivo?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1747251998508",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1747251998515",
+      "previous_sibling": "handler_8_1747251998515"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1747231016752",
+      "context": {
+        "especialidade": "@especialidade"
+      },
+      "conditions": "@especialidade",
+      "event_name": "input",
+      "dialog_node": "handler_7_1747231016759"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Essa especialidade não existe!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1747231016752",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1747231016759",
+      "previous_sibling": "handler_7_1747231016759"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1747251998508",
+      "context": {
+        "dispositivo": "@dispositivo"
+      },
+      "conditions": "@dispositivo",
+      "event_name": "input",
+      "dialog_node": "handler_8_1747251998515"
+    },
+    {
+      "type": "standard",
+      "title": "Falar com humano",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem, vou te transferir para um atendente humano.  "
+              },
+              {
+                "text": "Aguarde um momento, por favor... 🤝"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#falar_com_humano",
+      "dialog_node": "node_10_1747228637038",
+      "previous_sibling": "node_1_1747228281229"
+    },
+    {
+      "type": "standard",
+      "title": "Cancelar consulta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você deseja mesmo cancelar sua consulta marcada?\n\n"
+              },
+              {
+                "text": "Se sim, clique no botão 'Cancelar Consulta' no app ou diga:  \n\"Confirmo o cancelamento.\""
+              },
+              {
+                "text": "\nDeseja prosseguir?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#cancelar_consulta",
+      "dialog_node": "node_1_1747228281229",
+      "previous_sibling": "node_4_1747228155460"
+    },
+    {
+      "type": "standard",
+      "title": "rg",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu rg é $rg. Agora quero o número do seu Whatsapp."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1747227929707",
+      "context": {
+        "rg": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1747230786084"
+    },
+    {
+      "type": "standard",
+      "title": "Whatsapp",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O número do Whatsapp é $whatsapp. Agora quero a especialidade que você quer marcar a consulta( ex: Ginecologista, Psicólogo...) "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1747230786084",
+      "context": {
+        "whatsapp": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1747233826542"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! O seu dispositivo é um $dispositivo. E você está tendo problema com $problema_acesso!"
+              },
+              {
+                "text": "🔄 Tentar reiniciar o aplicativo\n         - Às vezes, só reiniciar resolve.\n         - Feche o aplicativo completamente e abra novamente.\n         \n"
+              },
+              {
+                "text": "❌ Fechar e abrir o app\n         - Para fechar, clique no botão de voltar ou feche o app na tela do celular.\n         - Depois, abra novamente. Isso ajuda a limpar travamentos.\n\n"
+              },
+              {
+                "text": "📲 Ver se há internet\n        - Verifique se o seu Wi-Fi ou dados móveis estão ligados.\n        - Sem internet, o aplicativo não consegue funcionar direitinho.\n\n"
+              },
+              {
+                "text": "🚿 Limpar a tela e tentar de novo\n         - Às vezes um toque errado ou sujeira na tela faz parecer que travou.\n         - Tente limpar a tela e tocar de novo no botão que precisa.\n\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Algumas dessas opções funcionou? Se não eu posso te encaminhar para  um humano te ajudar!",
+            "options": [
+              {
+                "label": "✅ Funcionou",
+                "value": {
+                  "input": {
+                    "text": "sim"
+                  }
+                }
+              },
+              {
+                "label": "❌ Nada Funcionou",
+                "value": {
+                  "input": {
+                    "text": "não quero"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1747251801146",
+      "conditions": "true",
+      "dialog_node": "node_1_1747251973325"
+    },
+    {
+      "type": "frame",
+      "title": "Especialidade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A especialidade é $especialidade. Agora que horário voce quer seu exame?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1747233826542",
+      "conditions": "true",
+      "dialog_node": "node_2_1747230997269"
+    },
+    {
+      "type": "standard",
+      "title": "hora",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O horário é as $horario."
+              },
+              {
+                "text": "\nTudo certo!  Seu nome é $nome, seu rg é $rg. Vou agendar uma consulta com $especialidade no período da $horario.  \nVocê receberá uma confirmação em breve em seu Whatsapp - $whatsapp. ✅"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Voce escreveu alguma informação errada?",
+            "options": [
+              {
+                "label": "✅ Escrevi",
+                "value": {
+                  "input": {
+                    "text": "quero"
+                  }
+                }
+              },
+              {
+                "label": "❌ Não",
+                "value": {
+                  "input": {
+                    "text": "não quero"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1747230997269",
+      "context": {
+        "horario": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1747231293291"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Te direcionando para colocar as informações de novo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1747231293291",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1747227505819"
+      },
+      "conditions": "@confirmação:sim",
+      "dialog_node": "node_2_1747231327921"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1747229548642",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1747234242904"
+      },
+      "conditions": "@confirmação:sim",
+      "dialog_node": "node_2_1747236114938"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Voce está tendo problema com $problema_acesso! "
+              },
+              {
+                "text": "Qual é o tipo do seu dispositivo? (Celular, tablet ou computador?)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1747250313331",
+      "conditions": "true",
+      "dialog_node": "node_2_1747251801146"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para marcar uma consulta, você só precisa informar a especialidade e o horário.  \nPosso te ajudar com isso agora. Vamos tentar?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "✅ Tentar",
+                "value": {
+                  "input": {
+                    "text": "sim"
+                  }
+                }
+              },
+              {
+                "label": "❌ Voltar",
+                "value": {
+                  "input": {
+                    "text": "não quero"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1747228155460",
+      "conditions": "@duvidas_gerais:consulta",
+      "dialog_node": "node_3_1747250318719",
+      "previous_sibling": "node_8_1747250313331"
+    },
+    {
+      "type": "standard",
+      "parent": "node_3_1747250318719",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1747227505819"
+      },
+      "conditions": "@confirmação:sim",
+      "dialog_node": "node_3_1747251313757"
+    },
+    {
+      "type": "standard",
+      "title": "Dúvidas gerais",
+      "output": {
+        "generic": [
+          {
+            "title": "Tudo bem, posso te ajudar com isso. 💙   Me diga com o que está com dificuldade ou escolha uma opção:",
+            "options": [
+              {
+                "label": "📅 Como marcar uma consulta  ",
+                "value": {
+                  "input": {
+                    "text": "consulta"
+                  }
+                }
+              },
+              {
+                "label": "🎥 Como entrar na teleconsulta",
+                "value": {
+                  "input": {
+                    "text": "teleconsulta"
+                  }
+                }
+              },
+              {
+                "label": "❓ Não entendi como funciona ",
+                "value": {
+                  "input": {
+                    "text": "como funciona"
+                  }
+                }
+              },
+              {
+                "label": "🧠 Tenho medo de errar",
+                "value": {
+                  "input": {
+                    "text": "medo de errar"
+                  }
+                }
+              },
+              {
+                "label": "💻 Aplicativo não funciona",
+                "value": {
+                  "input": {
+                    "text": "Aplicativo não funciona"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#duvidas_gerais",
+      "dialog_node": "node_4_1747228155460",
+      "previous_sibling": "node_5_1747234242904"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! Seu atendimento irá continuar!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1747228281229",
+      "conditions": "@confirmação:não",
+      "dialog_node": "node_4_1747228472805",
+      "previous_sibling": "node_8_1747228385967"
+    },
+    {
+      "type": "standard",
+      "title": "Video tutorial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo aqui em baixo está um vídeo tutorial de forma fácil explicando como entrar e marcar uma teleconsulta!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://www.youtube.com/watch?v=-J9QJ4RZFqo",
+            "response_type": "video",
+            "channel_options": {
+              "chat": {
+                "dimensions": {}
+              }
+            }
+          },
+          {
+            "title": "Se quiser posso te direcionar para um áudio de voz, quer?",
+            "options": [
+              {
+                "label": "✅ Me direcionar",
+                "value": {
+                  "input": {
+                    "text": "sim"
+                  }
+                }
+              },
+              {
+                "label": "❌ Continuar no vídeo",
+                "value": {
+                  "input": {
+                    "text": "não quero"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#video_tutorial",
+      "dialog_node": "node_4_1747229548642",
+      "previous_sibling": "node_6_1747228050206"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Consulta marcada! ✔️"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1747231293291",
+      "conditions": "@confirmação:não",
+      "dialog_node": "node_4_1747232239500",
+      "previous_sibling": "node_2_1747231327921"
+    },
+    {
+      "type": "standard",
+      "parent": "node_6_1747228050206",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@confirmação:não",
+      "dialog_node": "node_4_1747249153544",
+      "previous_sibling": "node_9_1747249148943"
+    },
+    {
+      "type": "standard",
+      "title": "Áudio explicativo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui está um aúdio explicativo mostrando como entrar nas teleconsultas!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://files.fm/f/5fzuyeczkp",
+            "response_type": "audio",
+            "channel_options": {
+              "voice_telephony": {
+                "loop": false
+              }
+            }
+          }
+        ]
+      },
+      "conditions": "#audio-tutorial",
+      "dialog_node": "node_5_1747234242904",
+      "previous_sibling": "node_4_1747229548642"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem! Este assistente pode te ajudar com:\n✅ Marcar consultas  \n✅ Entrar na teleconsulta  \n✅ Tirar dúvidas  \nÉ só me dizer o que você precisa, e eu guio você.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1747228155460",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@duvidas_gerais:(como funciona)",
+      "dialog_node": "node_5_1747250326002",
+      "previous_sibling": "node_8_1747250321715"
+    },
+    {
+      "type": "standard",
+      "title": "Agendar Consulta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! vamos começar nosso agendamento! Qual é o seu nome?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#agendar_consulta",
+      "dialog_node": "node_6_1747227505819",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "nome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo seu nome é $nome! Qual é o seu rg?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_6_1747227505819",
+      "context": {
+        "nome": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_6_1747227929707"
+    },
+    {
+      "type": "standard",
+      "title": "Entrar em Teleconsulta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para entrar na teleconsulta, você precisa primeiro agendar a sua consulta aqui comigo.\n\nDepois do agendamento, você vai receber uma mensagem no seu WhatsApp com a confirmação.\n\nNo dia da consulta, nosso sistema vai te enviar um botão no WhatsApp. É só clicar nesse botão para entrar direto na chamada com o médico.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Está com dúvidas?",
+            "options": [
+              {
+                "label": "✅ Estou",
+                "value": {
+                  "input": {
+                    "text": "sim"
+                  }
+                }
+              },
+              {
+                "label": "❌ Não Estou",
+                "value": {
+                  "input": {
+                    "text": "não quero"
+                  }
+                }
+              },
+              {
+                "label": "Me encaminhar para marcar uma consulta ✅",
+                "value": {
+                  "input": {
+                    "text": "agendar consulta"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#entrar_teleconsulta",
+      "dialog_node": "node_6_1747228050206",
+      "previous_sibling": "node_6_1747227505819"
+    },
+    {
+      "type": "standard",
+      "parent": "node_3_1747250318719",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@confirmação:não",
+      "dialog_node": "node_6_1747251317169",
+      "previous_sibling": "node_3_1747251313757"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.youtube.com/watch?v=-J9QJ4RZFqo",
+            "response_type": "video",
+            "channel_options": {
+              "chat": {
+                "dimensions": {}
+              }
+            }
+          }
+        ]
+      },
+      "parent": "node_8_1747250321715",
+      "conditions": "@confirmação:sim",
+      "dialog_node": "node_6_1747251549122"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, tudo certo então vamos voltar!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1747251973325",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@confirmação:sim",
+      "dialog_node": "node_6_1747252416290"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Te encaminhando para falar com um humano!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1747251973325",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1747228637038"
+      },
+      "conditions": "@confirmação:não",
+      "dialog_node": "node_6_1747252421331",
+      "previous_sibling": "node_6_1747252416290"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não se preocupe! Mesmo se você errar, a gente pode tentar de novo.  \nEstou aqui pra te ajudar sempre que precisar. 💙\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1747228155460",
+      "conditions": "@duvidas_gerais:(medo de errar)",
+      "dialog_node": "node_7_1747250309961"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sua teleconsulta foi cancelada!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1747228281229",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@confirmação:sim",
+      "dialog_node": "node_8_1747228385967"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que tipo de problema você está tendo?\n(Ex: não abre, trava, tela preta...)\nPosso tentar te orientar ou pedir ajuda para um humano.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1747228155460",
+      "conditions": "@duvidas_gerais:(Aplicativo não funciona)",
+      "dialog_node": "node_8_1747250313331",
+      "previous_sibling": "node_7_1747250309961"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Normalmente você recebe um link para a consulta.  \nClique nele no horário agendado e o médico estará lá.  \nPrecisa que eu te envie o vídeo tutorial com o passo a passo?\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "✅ Preciso",
+                "value": {
+                  "input": {
+                    "text": "sim"
+                  }
+                }
+              },
+              {
+                "label": "❌ Não Preciso",
+                "value": {
+                  "input": {
+                    "text": "não quero"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1747228155460",
+      "conditions": "@duvidas_gerais:teleconsulta",
+      "dialog_node": "node_8_1747250321715",
+      "previous_sibling": "node_3_1747250318719"
+    },
+    {
+      "type": "standard",
+      "parent": "node_8_1747250321715",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@confirmação:não",
+      "dialog_node": "node_8_1747251553385",
+      "previous_sibling": "node_6_1747251549122"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1747229548642",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1747249431146"
+      },
+      "conditions": "@confirmação:não",
+      "dialog_node": "node_9_1747236133829",
+      "previous_sibling": "node_2_1747236114938"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Iremos te encaminhar para um vídeo explicativo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1747228050206",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1747229548642"
+      },
+      "conditions": "@confirmação:sim",
+      "dialog_node": "node_9_1747249148943"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.youtube.com/watch?v=-J9QJ4RZFqo",
+            "response_type": "video",
+            "channel_options": {
+              "chat": {
+                "dimensions": {}
+              }
+            }
+          }
+        ]
+      },
+      "parent": "node_9_1747236133829",
+      "dialog_node": "node_9_1747249431146"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1747251801146",
+      "variable": "$problema_acesso",
+      "dialog_node": "slot_10_1747251811693",
+      "previous_sibling": "node_1_1747251973325"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1747251973325",
+      "variable": "$dispositivo",
+      "dialog_node": "slot_10_1747251998508",
+      "previous_sibling": "node_6_1747252421331"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1747230997269",
+      "variable": "$especialidade",
+      "dialog_node": "slot_8_1747231016752",
+      "previous_sibling": "node_2_1747231293291"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "AgendeFácil-dialog"
+}
